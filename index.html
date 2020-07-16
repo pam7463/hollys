@@ -31,43 +31,55 @@
       font-family:'Noto Sans KR';
     }
     .eng{font-family:'Roboto';}
+    .grid940{width:940px;margin:0 auto;}
+    
+    .header{
+      border-bottom:2px solid #ba000c;
+    }
+    .header_top>div{float:left;}
+    .header_small_menu01>ul>li{float:left;width:70px;margin-right:10px;}
+    .header_small_menu01>ul>li>a{font-weight:bold;font-size:11px;color:#333333;}
+    .header_small_menu01>ul>li>.font_red{color:#ba000c;}
+    .header_small_menu02>ul>li{float:left;}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header class="header">
-      <div class="header_top">
-        <div class="header_small_menu01">
+      <div class="grid940">
+        <div class="header_top clearfix">
+          <div class="header_small_menu01">
+            <ul class="clearfix">
+              <li><a href="#" class="font_red">가맹문의</a></li>
+              <li><a href="#">아카데미</a></li>
+              <li><a href="#">기업특판</a></li>
+            </ul>
+          </div>
+          <div class="logo">
+            <a href="index.html">
+              <img src="./images/logo.jpg" alt="할리스로고">
+            </a>
+          </div>
+          <div class="header_small_menu02">
+            <ul class="clearfix">
+              <li><a href="#">멤버십 로그인</a></li>
+              <li><a href="#">멤버십 가입</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#" class="eng">English</a></li>
+              <li><a href="#">中文</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_bottom eng">
           <ul>
-            <li><a href="#">가맹문의</a></li>
-            <li><a href="#">아카데미</a></li>
-            <li><a href="#">기업특판</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">HOLLYS Mall</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">HOLLYS News</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">HOLLYS is</a></li>
           </ul>
         </div>
-        <div class="logo">
-          <a href="index.html">
-            <img src="./images/logo.jpg" alt="할리스로고">
-          </a>
-        </div>
-        <div class="header_small_menu02">
-          <ul>
-            <li><a href="#">멤버십 로그인</a></li>
-            <li><a href="#">멤버십 가입</a></li>
-            <li><a href="#">고객센터</a></li>
-            <li><a href="#" class="eng">English</a></li>
-            <li><a href="#">中文</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="header_bottom eng">
-        <ul>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">HOLLYS Mall</a></li>
-          <li><a href="#">Membership</a></li>
-          <li><a href="#">HOLLYS News</a></li>
-          <li><a href="#">Store</a></li>
-          <li><a href="#">HOLLYS is</a></li>
-        </ul>
       </div>
     </header>
     <section class="sec01 main_banner"></section>
