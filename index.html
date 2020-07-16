@@ -18,6 +18,9 @@
   <!-- 구글폰트(로보토,노토산스KR) -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+
   <title>HOLLYS Coffee</title>
   <style>
     /* CSS Reset */
@@ -35,15 +38,24 @@
     
     .header{
       border-bottom:2px solid #ba000c;
+      padding-top:22px;
     }
+    .header_top{margin-bottom:10px;}
     .header_top>div{float:left;}
+    .header_small_menu01,
+    .header_small_menu02{margin-top:-10px;}
     .header_small_menu01>ul>li{float:left;width:70px;margin-right:10px;}
     .header_small_menu01>ul>li>a{font-weight:bold;font-size:11px;color:#333333;}
-    .header_small_menu01>ul>li>.font_red{color:#ba000c;}
+    .header_small_menu01>ul>li>a>i{margin-right:6px;}
+    
     .logo{width:393px;text-align:center;}
     .header_top>.header_small_menu02{box-sizing:border-box;width:307px;float:right;padding:0 7px;}
     .header_small_menu02>ul>li{float:left;margin-right:19px;}
     .header_small_menu02>ul>li>a{font-size:10px;color:#666666;}
+
+    .header_bottom{}
+    .header_bottom>ul>li{float:left;width:16.66666666666667%;padding:12px 0 20px 0;text-align:center;}
+    .header_bottom>ul>li>a{font-weight:bolder;font-size:19px;color:#333333;}
   </style>
 </head>
 <body>
@@ -53,9 +65,9 @@
         <div class="header_top clearfix">
           <div class="header_small_menu01">
             <ul class="clearfix">
-              <li><a href="#" class="font_red">가맹문의</a></li>
-              <li><a href="#">아카데미</a></li>
-              <li><a href="#">기업특판</a></li>
+              <li><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>가맹문의</a></li>
+              <li><a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i>아카데미</a></li>
+              <li><a href="#"><i class="fa fa-building" aria-hidden="true"></i>기업특판</a></li>
             </ul>
           </div>
           <div class="logo">
@@ -74,7 +86,7 @@
           </div>
         </div>
         <div class="header_bottom eng">
-          <ul>
+          <ul class="clearfix">
             <li><a href="#">Menu</a></li>
             <li><a href="#">HOLLYS Mall</a></li>
             <li><a href="#">Membership</a></li>
