@@ -29,7 +29,11 @@
   <script>
     $(document).ready(function(){
       $('.slider').bxSlider({
-        controls:false
+        mode:'fade',
+        responsive:false,
+        controls:false,
+        auto:true,
+        pause:3000
       });
     });
   </script>
@@ -73,6 +77,27 @@
     .header_bottom>ul>li>a{font-weight:bolder;font-size:19px;color:#333333;transition:0.3s;}
     .header_bottom>ul>li:hover>a{color:#ffffff;}
 
+    .main_banner .bx-wrapper {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    border:none;
+    background:transparent;
+    }
+    .main_banner .bx-wrapper .bx-pager{
+      bottom:32px;
+    }
+    .main_banner .bx-wrapper .bx-pager.bx-default-pager a{
+      background-color:#cccccc;
+      width:16px;
+      height:16px;
+      margin-left:8.5px;
+      margin-right:8.5px;
+      border-radius:8px;
+    }
+    .main_banner .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+      background-color:#ba000c;
+    }
   </style>
 </head>
 <body>
