@@ -47,16 +47,12 @@
     img{vertical-align:top;}
     .clearfix::after{content:'';display:block;clear:both;}
 
-    body{
-      font-family:'Noto Sans KR';
-    }
+    body{font-family:'Noto Sans KR';}
     .eng{font-family:'Roboto';}
     .grid940{width:940px;margin:0 auto;}
     
-    .header{
-      border-bottom:2px solid #ba000c;
-      padding-top:22px;
-    }
+    /* header section */
+    .header{border-bottom:2px solid #ba000c;padding-top:22px;}
     .header_top{margin-bottom:10px;}
     .header_top>div{float:left;}
     .header_small_menu01,
@@ -71,33 +67,19 @@
     .header_small_menu02>ul>li{float:left;margin-right:19px;}
     .header_small_menu02>ul>li>a{font-size:10px;color:#666666;}
 
-    .header_bottom{}
     .header_bottom>ul>li{float:left;width:16.66666666666667%;padding:12px 0 20px 0;text-align:center;transition:0.3s;}
     .header_bottom>ul>li:hover{background-color:#ba000c;}
     .header_bottom>ul>li>a{font-weight:bolder;font-size:19px;color:#333333;transition:0.3s;}
     .header_bottom>ul>li:hover>a{color:#ffffff;}
 
-    .main_banner .bx-wrapper {
-    -moz-box-shadow:none;
-    -webkit-box-shadow:none;
-    box-shadow:none;
-    border:none;
-    background:transparent;
-    }
-    .main_banner .bx-wrapper .bx-pager{
-      bottom:32px;
-    }
-    .main_banner .bx-wrapper .bx-pager.bx-default-pager a{
-      background-color:#cccccc;
-      width:16px;
-      height:16px;
-      margin-left:8.5px;
-      margin-right:8.5px;
-      border-radius:8px;
-    }
-    .main_banner .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
-      background-color:#ba000c;
-    }
+    /* main banner section */
+    .main_banner{margin-bottom:46px;}
+    .main_banner .bx-wrapper {-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;border:none;background:transparent;}
+    .main_banner .bx-wrapper .bx-pager{bottom:32px;}
+    .main_banner .bx-wrapper .bx-pager.bx-default-pager a{background-color:#cccccc;width:16px;height:16px;margin-left:8.5px;margin-right:8.5px;border-radius:8px;}
+    .main_banner .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {background-color:#ba000c;}
+
+
   </style>
 </head>
 <body>
@@ -158,7 +140,84 @@
         </div>
       </div>
     </section>
-    <section class="sec02 fra_mall_store"></section>
+    <section class="sec02 fra_mall_store">
+      <div class="grid940 clearfix">
+        <div class="fra">
+          <div class="fra_tit">
+            <h2><i class="fa fa-user-circle-o" aria-hidden="true"></i> Franchise</h2>
+          </div>
+          <div class="fra_txt">
+            <p>가맹문의</p>
+          </div>
+          <div class="fra_img">
+            <img src="./images/franshise.jpg" alt="프랜차이즈">
+          </div>
+        </div>
+        <div class="mall">
+          <div class="mall_tit">
+            <h2><i class="fa fa-cc-visa" aria-hidden="true"></i> HOLLYS Mall</h2>
+          </div>
+          <div class="mall_txt">
+            <p>할리스커피의 다양한 상품들을 온라인에서도 만나보세요.</p>
+          </div>
+          <div class="mall_list">
+            <ul>
+              <li>
+                <ul>
+                  <li>
+                    <img src="./images/mall01.jpg" alt="초코빙수">
+                  </li>
+                  <li>
+                    <p>
+                      할리스X몰티져스<br>
+                      초코빙수
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>
+                    <img src="./images/mall02.jpg" alt="망고 치즈케익 빙수">
+                  </li>
+                  <li>
+                    <p>
+                      망고 치즈케익 빙수
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>
+                    <img src="./images/mall03.jpg" alt="딸기 치즈케익 빙수">
+                  </li>
+                  <li>
+                    <p>
+                      딸기 치즈케익 빙수
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="store">
+          <div class="store_tit">
+            <h2><i class="fa fa-book" aria-hidden="true"></i> Store</h2>
+          </div>
+          <div class="store_txt">
+            <p>
+              전국에 있는 할리스 매장을<br>
+              찾아드립니다
+            </p>
+          </div>
+          <div class="store_img">
+            <img src="./images/store.jpg" alt="스토어1">
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="sec03 banner"></section>
     <section class="sec04 notice"></section>
     <section class="sec05 sns"></section>
