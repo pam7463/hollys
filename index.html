@@ -103,12 +103,22 @@
     */
 
     /* banner section */
+    .banner{margin-bottom:18px;}
     .banner01{float:left;}
     .banner02{float:right;}
 
     /* notice section */
+    .notice .grid940{border-bottom:2px solid #ba000c;padding-bottom:50px;}
     .notice>div>div{float:left;width:24.20212765957447%;margin-right:10px;}
     .notice>div>div:last-child{margin-right:0;}
+    .notice_tit>h2{font-family:'Roboto';font-weight:bold;font-size:18px;color:#333333;}
+    .notice_txt p,.notice_quick>p,.etc_txt p{font-weight:100;font-size:12px;line-height:20px;color:#666666;}
+    .notice_txt li>div:first-child{float:left;}
+    .notice_txt li>div:last-child{float:right;}
+
+    .etc_imgs .etc_img{box-sizing:border-box;float:left;width:76px;}
+    .etc_imgs .etc_img:nth-child(2){border-left:1px solid #ba000c;border-right:1px solid #ba000c;width:75px;}
+    .etc_txt p{float:left;width:33.33333333333333%;text-align:center;}
   </style>
 </head>
 <body>
@@ -326,7 +336,11 @@
                 <div>
                   <p>2020년 여름시즌 신제품....</p>
                 </div>
-                <div>2020-06-30</div>
+                <div>
+                  <p>
+                    2020-06-30
+                  </p>
+                </div>
               </li>
               <li class="clearfix">
                 <div>
@@ -359,7 +373,9 @@
         </div>
       </div>
     </section>
-    <section class="sec05 sns"></section>
+    <section class="sec05 sns">
+      
+    </section>
     <footer class="footer"></footer>
   </div>
 </body>
