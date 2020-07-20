@@ -76,6 +76,7 @@
 
     /* main banner section */
     .main_banner{margin-bottom:46px;}
+    .main_banner .slider img{cursor:pointer;}
     .main_banner .bx-wrapper {-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;border:none;background:transparent;}
     .main_banner .bx-wrapper .bx-pager{bottom:32px;}
     .main_banner .bx-wrapper .bx-pager.bx-default-pager a{background-color:#cccccc;width:16px;height:16px;margin-left:8.5px;margin-right:8.5px;border-radius:8px;}
@@ -83,6 +84,7 @@
 
     /* fra_mall_store section */
     .fra_mall_store{margin-bottom:40px;}
+    .fra,.store{cursor:pointer;}
     .fra,.mall,.store{float:left;width:230px;margin-right:10px;position:relative;}
     .mall{width:460px;}
     .store{margin-right:0;}
@@ -95,6 +97,7 @@
     .mall h2{color:#ba000c;}
     .mall_list{padding-top:90px;}
     .mall_list_item{float:left;}
+    .mall_list_item ul{cursor:pointer;}
     .mall_list_item p{font-weight:100;font-size:14px;line-height:21px;color:#333333;text-align:center;}
     /* 
     .mall_line{
@@ -119,6 +122,24 @@
     .etc_imgs .etc_img{box-sizing:border-box;float:left;width:76px;}
     .etc_imgs .etc_img:nth-child(2){border-left:1px solid #ba000c;border-right:1px solid #ba000c;width:75px;}
     .etc_txt p{float:left;width:33.33333333333333%;text-align:center;}
+
+    /* sns section */
+    .sns{padding-top:45px;padding-bottom:115px;}
+    .sns_tit, .sns_icons{float:left;}
+    .sns_tit{width:149px;margin-right:10px;}
+    .sns_icons{margin-top:3px;}
+    .sns h2{font-family:'Roboto';font-weight:900;font-size:24px;color:#333333;}
+
+    /* footer section */
+    .footer{padding:18px 0;background-color:#ba000c;}
+    .footer ul{margin-bottom:6px;}
+    .footer li{float:left;border-right:1px solid #ffffff;padding:0 14px;}
+    .footer li a{color:#ffffff;font-size:14px;}
+    .footer li:first-child{padding-left:0;}
+    .footer li:first-child a{font-weight:bold;}
+    .footer li:last-child{border-right:none;}
+    .footer li:hover a{font-weight:bold;}
+    .footer p{font-weight:100;font-size:12px;line-height:20px;color:#ffffff;}
   </style>
 </head>
 <body>
@@ -163,7 +184,7 @@
     <section class="sec01 main_banner">
       <div class="slider">
         <div>
-          <img src="./images/main_banner01.jpg" alt="banner01">
+            <img src="./images/main_banner01.jpg" alt="banner01">
         </div>
         <div>
           <img src="./images/main_banner02.jpg" alt="banner02">
@@ -374,9 +395,34 @@
       </div>
     </section>
     <section class="sec05 sns">
-      
+      <div class="grid940 clearfix">
+        <div class="sns_tit">
+          <h2>HOLLYS Live</h2>
+        </div>
+        <div class="sns_icons">
+          <img src="./images/sns01.jpg" alt="sns01">
+          <img src="./images/sns02.jpg" alt="sns02">
+          <img src="./images/sns03.jpg" alt="sns03">
+        </div>
+      </div>
     </section>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="grid940">
+        <ul class="clearfix">
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">서비스이용약관</a></li>
+          <li><a href="#">멤버십이용약관</a></li>
+          <li><a href="#">고객설문</a></li>
+          <li><a href="#">사이트맵</a></li>
+          <li><a href="#"><span class="eng">BI</span>소개</a></li>
+        </ul>
+        <p>
+          법인명:(주)할리스에프앤비 대표자:김유진 사업자등록번호 21187-61044 통신판매업:제2019-서울종로-0193호<br>
+          주소:서울특별시 종로구 율곡로 88 삼환빌딩 8층(운니동) 대표전화:02-2188-7100 (가맹문의:1670-4432)<br>
+          COPYRIGHT(C) HOLLYS COFFEECo., Ltd. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
